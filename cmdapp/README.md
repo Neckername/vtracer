@@ -94,3 +94,14 @@ Since `0.6`, [`vtracer`](https://pypi.org/project/vtracer/) is also packaged as 
 ```sh
 pip install vtracer
 ```
+
+## C API (experimental)
+
+For integration with C or C++ projects, the library exposes a simple C interface:
+
+```c
+int vtracer_convert_image_to_svg(const char *input_path, const char *output_path);
+```
+
+The function converts an image to an SVG using the default configuration. It returns
+`0` on success and a non-zero value on failure.
