@@ -12,11 +12,15 @@ mod config;
 mod converter;
 #[cfg(feature = "python-binding")]
 mod python;
+#[cfg(feature = "capi")]
+mod capi;
 mod svg;
 
 pub use config::*;
 pub use converter::*;
 #[cfg(feature = "python-binding")]
 pub use python::*;
+#[cfg(feature = "capi")]
+pub use capi::*;
 pub use svg::*;
 pub use visioncortex::ColorImage;

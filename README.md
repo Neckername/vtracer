@@ -105,6 +105,13 @@ Since `0.6`, [`vtracer`](https://pypi.org/project/vtracer/) is also packaged as 
 pip install vtracer
 ```
 
+### C API
+
+A minimal C header is provided in `capi/vtracer.h` for integrating VTracer
+into other languages. The C interface currently exposes a single helper
+function to convert an image file to an SVG using the library's default
+configuration.
+
 ## In the wild
 
 VTracer is used by the following products (open a PR to add yours):
